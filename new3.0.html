@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Webline – Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: '#4f46e5',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="font-poppins bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+
+  <!-- Sticky Navbar -->
+  <nav class="fixed w-full bg-white dark:bg-gray-800 shadow z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">Yashraj Raut</h1>
+      <div class="space-x-6 hidden md:flex">
+        <a href="#hero" class="hover:text-primary">Home</a>
+        <a href="#about" class="hover:text-primary">About</a>
+        <a href="#skills" class="hover:text-primary">Skills</a>
+        <a href="#projects" class="hover:text-primary">Projects</a>
+        <a href="#contact" class="hover:text-primary">Contact</a>
+        <button id="dark-toggle" class="ml-4 px-2 py-1 border rounded">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="h-screen flex flex-col justify-center items-center text-center px-4 pt-20">
+    <h2 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Yashraj</h2>
+    <p class="text-xl md:text-2xl mb-6">Web Developer • Designer • Creator</p>
+    <a href="resume.pdf" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-indigo-700">Download Resume</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-4 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <img src="WhatsApp Image 2025-07-24 at 06.23.40_241237e5.jpg" class="w-40 h-40 rounded-full object-cover shadow-md">
+      <p class="text-lg leading-relaxed">
+        I'm a undergraduate developer with a passion for beautiful design and great user experience.
+        I have 2+ years of experience building responsive websites and apps with HTML, CSS, JavaScript, and frameworks like React.
+        I love bringing ideas to life in the browser.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-gray-100 dark:bg-gray-800 py-20 px-4">
+    <h2 class="text-3xl font-bold text-center mb-10">Skills</h2>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <div>
+        <p>HTML & CSS</p>
+        <div class="w-full bg-gray-300 rounded-full h-4 mt-1">
+          <div class="h-4 bg-primary rounded-full" style="width: 95%;"></div>
+        </div>
+      </div>
+      <div>
+        <p>JavaScript</p>
+        <div class="w-full bg-gray-300 rounded-full h-4 mt-1">
+          <div class="h-4 bg-primary rounded-full" style="width: 85%;"></div>
+        </div>
+      </div>
+      <div>
+        <p>React</p>
+        <div class="w-full bg-gray-300 rounded-full h-4 mt-1">
+          <div class="h-4 bg-primary rounded-full" style="width: 75%;"></div>
+        </div>
+      </div>
+      <div>
+        <p>Tailwind CSS</p>
+        <div class="w-full bg-gray-300 rounded-full h-4 mt-1">
+          <div class="h-4 bg-primary rounded-full" style="width: 80%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Projects Section -->
+<section id="projects" class="py-20 px-4 max-w-6xl mx-auto">
+  <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    <!-- Project 1: Portfolio Website -->
+    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition">
+     <img src="a1614500-e03f-11eb-986a-30f6f0d4f1cc.png" alt="Portfolio Website" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="font-semibold text-xl mb-2">Portfolio Website</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">Responsive personal portfolio built with HTML, Tailwind CSS, and JavaScript to showcase web skills and projects.</p>
+        <div class="flex space-x-4">
+          <a href="https://github.com/yourusername/portfolio-site" class="text-primary hover:underline">GitHub</a>
+          <a href="https://yourusername.github.io/portfolio-site/" class="text-primary hover:underline">Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2: Task Manager Web App -->
+    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition">
+      <img src="Task-manager-apps-scaled.jpg" alt="Task Manager App" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="font-semibold text-xl mb-2">Task Manager App</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">To-do web app built with React and Firebase. Allows users to add, delete, and complete tasks easily.</p>
+        <div class="flex space-x-4">
+          <a href="https://github.com/yourusername/task-manager" class="text-primary hover:underline">GitHub</a>
+          <a href="https://taskly-app.web.app/" class="text-primary hover:underline">Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3: E-Commerce UI -->
+    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition">
+      <img src="photo-1453928582365-b6ad33cbcf64.jpeg" alt="E-Commerce UI" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="font-semibold text-xl mb-2">E-Commerce UI</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">A responsive front-end e-commerce layout using Tailwind CSS with product filters and mobile responsiveness.</p>
+        <div class="flex space-x-4">
+          <a href="https://github.com/yourusername/ecommerce-ui" class="text-primary hover:underline">GitHub</a>
+          <a href="https://yourusername.github.io/ecommerce-ui/" class="text-primary hover:underline">Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4: Weather Forecast App -->
+    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition">
+      <img src="images.jpeg" alt="Weather App" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="font-semibold text-xl mb-2">Weather Forecast App</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">Real-time weather app built using JavaScript and OpenWeather API with a modern, minimal UI.</p>
+        <div class="flex space-x-4">
+          <a href="https://github.com/yourusername/weather-app" class="text-primary hover:underline">GitHub</a>
+          <a href="https://yourusername.github.io/weather-app/" class="text-primary hover:underline">Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 5: Blog Platform UI -->
+    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition">
+      <img src="original-4b9aa8e4354ea3a59e7a8ed5de080963.webp" alt="Blog Platform UI" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="font-semibold text-xl mb-2">Blog Platform UI</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">A clean and elegant blog front-end layout using Tailwind CSS with featured posts and category sections.</p>
+        <div class="flex space-x-4">
+          <a href="https://github.com/yourusername/blog-platform-ui" class="text-primary hover:underline">GitHub</a>
+          <a href="https://yourusername.github.io/blog-platform-ui/" class="text-primary hover:underline">Demo</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-indigo-100 py-12 px-6 md:px-20">
+    <h2 class="text-3xl font-bold text-indigo-700 mb-4 text-center">Contact</h2>
+    <p class="text-center text-gray-700 mb-6">Feel free to reach out via email or social platforms.</p>
+    <div class="text-center">
+      <a href="mailto:yashraj@example.com" class="text-indigo-600 hover:underline">yashraj@example.com</a>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button -->
+  <button id="to-top" class="hidden fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg">↑</button>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-gray-900 text-center py-6 text-gray-600 dark:text-gray-400">
+    <div class="space-x-4 mb-2">
+      <a href="#" class="hover:text-primary">GitHub</a>
+      <a href="#" class="hover:text-primary">LinkedIn</a>
+      <a href="#" class="hover:text-primary">Twitter</a>
+    </div>
+    <p>© 2025 Webline. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Dark mode toggle
+    const toggle = document.getElementById('dark-toggle');
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      toggle.textContent = document.documentElement.classList.contains('dark') ? '☀' : '🌙';
+    });
+
+    // Scroll-to-top button
+    const toTop = document.getElementById('to-top');
+    window.addEventListener('scroll', () => {
+      toTop.classList.toggle('hidden', window.scrollY < 200);
+    });
+    toTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Contact form message
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('form-status').classList.remove('hidden');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
